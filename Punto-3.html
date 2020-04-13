@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller JavaScript 3 - Punto 3 cronometro</title>
+
+    <style>
+         body {
+        
+        background-color: palegreen;
+        
+        }
+        
+        h1 {
+        
+           text-align: center;
+            
+        }
+        
+.ric {
+
+font-size: 30px;
+font-style: italic;
+color: blue;
+
+
+}
+
+        </style>
+
+<body>
+    
+    <h1>Taller JavaScript 3</h1>
+    <h3>Punto 3</h3>
+    <p>Crear un cronometro que inicie automáticamente y que máximo llegue a un minuto.
+    </p>
+
+             <script>
+            
+            let cronometro;
+            function detenerse()    
+            {      
+                clearInterval(cronometro);    
+            } 
+       function carga()        
+            {       
+                contador_s =0;       
+                contador_m =0;       
+                s = document.getElementById("segundos");      
+                m = document.getElementById("minutos"); 
+                 
+       
+                cronometro = setInterval(      
+                    function(){     
+                        if(contador_s==60)      
+                        {   
+
+                            clearInterval(cronometro)    
+                            contador_s=0;      
+                            contador_m++;       
+                            m.innerHTML = contador_m;  
+            
+                            if(contador_m==60)       
+                            {       
+                                contador_m=0;      
+                            }      
+                        }   
+                        s.innerHTML = contador_s;      
+                        contador_s++; 
+                                  }
+     
+                    ,1000);  
+                          }
+         
+            </script>   
+        </head>     
+        <body onload="carga()">    
+            <p class="ric">  
+               <span>0</span>: <span id="minutos">0</span>: <span id="segundos">0</span>    
+                </p>     
+            </body>
+     
+        </html>
+        
+
+
+
+    
+    
+    
+    

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller JavaScript 3 - Punto 7</title>
+
+    <style>
+         body {
+        
+        background-color: palegreen;
+        
+        }
+        
+        h1 {
+        
+           text-align: center;
+            
+        }
+        
+        </style>
+
+</head>
+
+<body>
+
+
+    
+    <h1>Taller JavaScript 3</h1>
+    <h3>Punto 7</h3>
+    <p>Imprimir todos los números que sean múltiplos de 8 hasta llegar al valor 500. Si se
+        llega al límite de 500 y no existe ningún múltiplo de 8, indicar por medio de un
+        mensaje al usuario “Lo sentimos, no existe un número 500 que sea múltiplo de 8”      
+
+    </p>
+
+<script>
+      
+        function multiple(valor, multiple)
+        {
+            resto = valor % multiple;
+            if(resto==0)
+                return true;
+            else
+                return false;
+        }
+ 
+             var mul8=[];
+ 
+             document.write("Los multiplos de 8 son: ");
+             document.write("<p>");
+
+        for(var i=1;i<=500;i++)
+        {
+            
+            if(multiple(i,8)){
+                mul8.push(i);
+                document.write(i+", " )}
+        }
+               
+        if(mul8.length == 0){
+
+            alert(" Lo sentimos, no existe un número 500 que sea múltiplo de 8" );
+        }
+        
+</script>
+  
+
+</body>
+
+</html>
+
+
+
+
+    
+    
+    
+    

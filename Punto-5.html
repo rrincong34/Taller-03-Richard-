@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="ancho=device-ancho, initial-scale=1.0">
+    <title>Taller JavaScript 3 - Punto 5</title>
+
+    <style>
+         body {
+        
+        background-color: palegreen;
+        
+        }
+        
+        h1 {
+        
+           text-align: center;
+            
+        }
+        
+  
+        </style>
+
+</head>
+
+<body>
+    
+    <h1>Taller JavaScript 3</h1>
+    <h3>Punto 5</h3>
+    <p>Realizar un algoritmo que permita calcular el área de cualquiera de las siguientes
+        figuras geométricas: 1. Cuadrado 2. Rectángulo 3. Triangulo 4. Circulo
+    </p><br>
+
+<img src="1.jpg" alt="">
+
+<img src="2.jpg" alt="">
+
+<form>
+  
+   
+    <h3>Calcula Area</h3>
+  <input onclick="areacu()" type="button" value="1.Area del cuadrado">
+  <input onclick="arear()" type="button" value="2.Area del rectangulo">
+  <input onclick="areati()" type="button" value="3.Area del triangulo">
+  <input onclick="areac()" type="button" value="4.Area del circulo">
+   
+    </form>
+
+<p>El usuario debe poder escoger la figura geométrica y él debe poder ingresar los valores
+    deseados.</p>  
+
+
+<script>
+
+
+//1.area cuadrado
+function areacu()  {
+let a = parseInt(prompt("Ingresa el lado a=  (En cm)"));
+let sum = a*a
+alert("El area es "+sum+"" +"  "+"cm²" )
+
+}
+
+//2.area rectangulo
+function arear()  {
+
+let a = parseInt(prompt("Ingresa el lado a=  (En cm)"));
+let b = parseInt(prompt("Ingresa el lado b=  (En cm)"));
+
+let sum = a*b
+alert("El area es "+sum+"" +"  "+"cm²" )
+
+}
+
+//3.area triangulo
+function areati()  {
+
+let a = parseInt(prompt("Ingresa el lado a=  (En cm)"));
+let h = parseInt(prompt("Ingresa el lado h=  (En cm)"));
+let sum = (1/2)*a*h
+alert("El area es "+sum+"" +"  "+"cm²" )
+
+}
+//4.area circulo
+function areac()  {
+
+let r = parseInt(prompt("Ingresa el radio r=  (En cm)"));
+let sum = Math.round(r*r*Math.PI) 
+alert("El area es "+sum+"" +"  "+"cm²" )
+
+}
+     
+</script>
+  
+</body>
+
+</html>
+
+
+
+
+    
+    
+    
+    

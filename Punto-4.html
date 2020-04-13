@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller JavaScript 3 - Punto 4</title>
+
+    <style>
+         body {
+        
+        background-color: palegreen;
+        
+        }
+        
+        h1 {
+        
+           text-align: center;
+            
+        }
+        
+        </style>
+
+</head>
+
+<body>
+    
+    <h1>Taller JavaScript 3</h1>
+    <h3>Punto 4</h3>
+    <p>El usuario desea ingresar una palabra y quiere saber cuántas vocales tiene. Crear un
+        algoritmo que realice dicha función.</p>
+    <script>     
+
+let palabra = prompt("ingresar una palabra");
+function getCount(str){
+let contarVo = 0;
+const vocal = 'aeiouAEIOUáéíóú';
+for (let elem of str){
+if (vocal.includes(elem)){
+contarVo++;
+}
+}
+return contarVo;
+}
+alert(palabra +"  "+ "tiene" +"  "+ getCount(palabra) +"  " + "vocales" );
+      
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+    
+    
+    
+    

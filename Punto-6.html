@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller JavaScript 3 - Punto 6</title>
+
+    <style>
+         body {
+        
+        background-color: palegreen;
+        
+        }
+        
+        h1 {
+        
+           text-align: center;
+            
+        }
+        
+        </style>
+
+</head>
+
+<body>
+    
+    <h1>Taller JavaScript 3</h1>
+    <h3>Punto 6</h3>
+    <p>Cinco cajeros realizan su jornada laboral de 8 horas diarias. Al trabajar 80 días el
+        supermercado desea hacerles saber lo siguiente:      
+
+        <ul>
+            <li>Total de ventas de todos los cajeros : <div id="respuesta1">  </div>  </li>  
+            <li>Quién fue el cajero que vendió más (total de ventas de un solo cajero)</li>
+            <li>En qué día se vendió más y quién fue el cajero responsable de ese día</li>
+<li> Mostrar el cajero que menos ventas hizo el día 60  </li>
+<li> Mostrar el mejor y el peor cajero del día 30 </li>
+
+        </ul>
+    </p>
+
+
+    <script>
+
+var i=0
+class Vendedor{
+
+    constructor(nombre, dias, ventas){
+
+     this.nombre=nombre;
+     this.dias=[];
+     this.ventas=ventas;
+    }
+crearDias(){
+
+this.dias=new Array
+
+for(i=0; i<60; i++){
+
+this.dias.push=" dia "+(i+1)
+
+
+}
+console.log(this.dias)
+
+
+}
+
+    
+}
+let vendedor1=new Vendedor('Manolo',2,3);
+
+vendedor1.crearDias()
+// let vendedor2=new Vendedor('Juan',crearDias(),crearVentas())
+// let vendedor3=new Vendedor('Pedro',crearDias(),crearVentas())
+console.log(vendedor1)
+
+
+function crearVentas(){
+
+let ventas=new Array
+
+for(i=0; i<60; i++){
+
+    ventas.push= Math.floor(Math.random() * (2000 - 500)) + 500;
+
+}
+console.log(ventas)
+return ventas
+
+}
+
+function sumaVentas(vendedor){
+
+var suma=0
+
+for(i=0; i<60; i++){
+
+suma+=vendedor.ventas[i]
+
+}
+return suma
+
+}
+
+// document.getElementById("respuesta1").innerHTML=sumaVentas(vendedor1)+sumaVentas(vendedor2)+sumaVentas(vendedor3)
+
+
+
+      
+</script>
+  
+
+</body>
+
+</html>
+
+
+
+
+    
+    
+    
+    

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller JavaScript 3 - Punto 2</title>
+
+    <style>
+         body {
+        
+        background-color: palegreen;
+        
+        }
+        
+        h1 {
+        
+           text-align: center;
+            
+        }
+        
+        </style>
+
+</head>
+
+<body>
+    
+    <h1>Taller JavaScript 3</h1>
+    <h3>Punto 2</h3>
+    <p>El usuario debe ingresar el número de personas que quiera e ingresar sus respectivas
+        edades. Crear un script que saque la suma total de edades y el promedio de edad
+        respecto a la cantidad de personas ingresadas por el usuario. Los resultados se deben
+        mostrar en un alert y la operación matemática en consola.       
+
+    </p>
+
+    <script>
+
+        let numPer = parseInt(prompt("Ingresa un numero de personas"));        
+        let cont = 0;
+	    let suma = 0;
+       
+	    for(cont=0; numPer>cont;cont++){	  	 
+	    let edadPer = parseInt(prompt("Ingresa edad personas"));
+            suma += edadPer
+	    }            
+        alert(`la suma total de edades es : ${suma}  el promedio de edad ${(suma/numPer)}`) ;
+
+</script>
+  
+
+</body>
+
+</html>
+
+
+
+
+    
+    
+    
+    

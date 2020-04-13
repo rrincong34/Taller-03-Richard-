@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller JavaScript 3 - Punto 8</title>
+
+    <style>
+         body {
+        
+        background-color: palegreen;
+        
+        }
+        
+        h1 {
+        
+           text-align: center;
+            
+        }
+        
+        </style>
+
+</head>
+
+<body>
+    
+    <h1>Taller JavaScript 3</h1>
+    <h3>Punto 8</h3>
+    <p>Dibujar los siguientes patrones usando ciclos:
+    </p>
+
+
+    <script>
+
+    let i,r;
+    
+    document.write("<p> Figura A </p>");   
+
+    for (i=1;i<=9;i++)
+    {
+        for(r=1;r<=i;r++) 
+            document.write("*");
+        document.write("<br>");
+    }
+   
+       for (i=8;i>=1;i--)
+    {
+        for(r=1;r<=i;r++)
+            document.write("*");
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+
+    document.write("<p> Figura B </p>");   
+
+    for (i=9;i>=1;i--)
+    {
+        for(r=9;r<=1-i;r++)
+            document.write("&nbsp&nbsp");
+        for(r=1;r<=i;r++)
+            document.write("*");
+        document.write("<br>");
+    }
+    
+    
+    for (i=1;i<=9;i++)
+    {
+        for(r=9;r<=1-i;r++)
+            document.write("&nbsp&nbsp");
+        for(r=1;r<=i;r++)
+            document.write("*");
+        document.write("<br>");
+    }
+    document.write("<br>");
+    
+  
+    document.write("<p> <strong>La figura C </strong>inicialmente debe pedirle al usuario que ingrese un número y empezar a imprimir la siguiente pirámide de manera descendente de acuerdo al número ingresado </p>  ");   
+  
+
+
+    let a = parseInt(prompt("Ingresa el numero :"));
+
+
+    for (i=a;i>=1;i--)
+    {
+        for(r=1;r<=i;r++)
+            document.write("*");
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+
+
+
+
+</script>
+  
+
+</body>
+
+</html>
+
+
+
+
+    
+    
+    
+    
